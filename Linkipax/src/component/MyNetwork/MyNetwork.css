@@ -1,0 +1,83 @@
+/* MyNetwork.css */
+
+/* General Styling */
+.my-network-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+  /* Card Styling */
+  .card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #ddd;
+    font-weight: bold;
+    padding: 1rem;
+  }
+  
+  /* Horizontal Scroll Container */
+  .horizontal-scroll {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    padding: 1rem;
+    gap: 1rem;
+  }
+  
+  /* Network Item Styling */
+  .network-item {
+    flex: 0 0 auto;
+    width: 200px;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  /* Profile Image */
+  .profile-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #0a66c2;
+  }
+  
+  /* Buttons */
+  .btn-success {
+    background-color: #0a66c2;
+    border: none;
+  }
+  
+  .btn-success:hover {
+    background-color: #004182;
+  }
+  
+  .btn-outline-danger {
+    border-color: #dc3545;
+    color: #dc3545;
+  }
+  
+  .btn-outline-danger:hover {
+    background-color: #dc3545;
+    color: #fff;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .horizontal-scroll {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .network-item {
+      width: 100%;
+      max-width: 200px;
+    }
+  }

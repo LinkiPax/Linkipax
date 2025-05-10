@@ -1,0 +1,120 @@
+
+
+/* Card Styling */
+.suggestions-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  background: #fff;
+  width: 100%;
+  max-width: 250px; /* Restrict width to fit one item */
+  display: flex;
+  padding: 0.75rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Card Header */
+.suggestions-card .card-header {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #ddd;
+  font-weight: bold;
+  text-align: center;
+  padding: 0.75rem;
+  font-size: 1rem;
+}
+
+/* Horizontal Scroll Container */
+.horizontal-scroll {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none; /* Hide scrollbar */
+  justify-content: center; /* Center items inside */
+  align-items: center;
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.horizontal-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* Suggestion Item */
+.suggestion-item {
+  flex: 0 0 100%; /* Each item takes full width */
+  max-width: 250px; /* Matches container width */
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Center content inside */
+  scroll-snap-align: center;
+}
+
+/* Profile Image */
+.profile-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #0a66c2;
+}
+
+/* Name and Company */
+.suggestion-item h6 {
+  margin: 0.5rem 0 0.25rem;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.suggestion-item small {
+  font-size: 0.875rem;
+  color: #666;
+  text-align: center;
+}
+
+/* Connection Button */
+.connect-button {
+  width: 100%;
+  max-width: 140px;
+  margin-top: 0.5rem;
+  border-radius: 20px;
+  background-color: #0a66c2;
+  border: none;
+  color: white;
+  font-size: 0.9rem;
+  padding: 0.4rem 0;
+  transition: background-color 0.3s ease;
+}
+
+.connect-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.connect-button:hover:not(:disabled) {
+  background-color: #004182;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 480px) {
+  .suggestions-card {
+    max-width: 90%;
+  }
+
+  .suggestion-item {
+    max-width: 90%;
+  }
+}

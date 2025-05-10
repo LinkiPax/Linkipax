@@ -1,0 +1,100 @@
+/* ProfilePage.css */
+
+.main-content {
+  max-height: calc(100vh - 80px); /* Adjust height to fit within the viewport */
+  overflow-y: auto; /* Enable vertical scrolling */
+  padding-bottom: 20px;
+}
+
+/* Profile Header */
+.profile-header {
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  position: relative;
+}
+
+.profile-header .overlay {
+  background: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.profile-info img {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  border: 3px solid #fff;
+}
+
+.profile-info .profile-details {
+  margin-left: 20px;
+  color: white;
+}
+
+.profile-info .edit-btn {
+  margin-left: auto;
+}
+
+/* Sections Layout */
+.main-content .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-content .col-md-8,
+.main-content .col-md-4 {
+  padding: 10px;
+}
+
+/* Cards and Sections */
+.card {
+  border-radius: 12px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+}
+
+/* Scrollable modal */
+.modal-body {
+  max-height: 70vh;
+  overflow-y: auto;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: #0073b1;
+  border: none;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #005582;
+}
+
+/* Trending Section */
+.trending-section {
+  max-height: 500px;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .profile-info {
+    flex-direction: column;
+    text-align: center;
+  }
+  .profile-info .edit-btn {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}

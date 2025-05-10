@@ -1,0 +1,78 @@
+/* Advertisement Card Styling */
+.advertisement-card {
+  border: none;
+  border-radius: 10px; /* LinkedIn uses slightly rounded corners */
+  background-color: #ffffff; /* LinkedIn's card background color */
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Subtle shadow like LinkedIn */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  margin-bottom: 1rem; /* Consistent spacing */
+}
+
+.advertisement-card:hover {
+  transform: translateY(-2px); /* Slight lift on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Stronger shadow on hover */
+}
+
+.card-body {
+  padding: 1.5rem; /* LinkedIn-like padding */
+  text-align: center; /* Center-align content */
+}
+
+.card-title {
+  font-size: 1.25rem; /* LinkedIn's font size for titles */
+  font-weight: 600; /* Semi-bold for emphasis */
+  color: #000000; /* LinkedIn's primary text color */
+  margin-bottom: 0.75rem; /* Consistent spacing */
+}
+
+.card-description {
+  font-size: 0.9rem; /* LinkedIn's font size for descriptions */
+  color: #666666; /* LinkedIn's secondary text color */
+  margin-bottom: 1.5rem; /* Consistent spacing */
+}
+
+.card-button {
+  background-color: #0a66c2; /* LinkedIn's primary blue */
+  border: none;
+  border-radius: 25px; /* Rounded corners like LinkedIn */
+  padding: 0.5rem 1.5rem; /* LinkedIn-like button padding */
+  font-size: 0.9rem; /* LinkedIn's font size for buttons */
+  font-weight: 600; /* Semi-bold for emphasis */
+  color: #ffffff; /* White text */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.card-button:hover {
+  background-color: #004182; /* Darker shade for hover */
+  transform: scale(1.05); /* Slight scale on hover */
+}
+
+.card-button:active {
+  transform: scale(0.95); /* Slight scale on click */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .advertisement-card {
+    margin-bottom: 0.75rem; /* Smaller margin on mobile */
+  }
+
+  .card-body {
+    padding: 1rem; /* Smaller padding on mobile */
+  }
+
+  .card-title {
+    font-size: 1.1rem; /* Smaller font size on mobile */
+  }
+
+  .card-description {
+    font-size: 0.8rem; /* Smaller font size on mobile */
+    margin-bottom: 1rem; /* Smaller margin on mobile */
+  }
+
+  .card-button {
+    padding: 0.5rem 1rem; /* Smaller padding on mobile */
+    font-size: 0.8rem; /* Smaller font size on mobile */
+  }
+}

@@ -1,0 +1,71 @@
+/* Trending Topics Card Styling */
+.trending-topics-card {
+  border: none;
+  border-radius: 10px; /* LinkedIn uses slightly rounded corners */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  margin-bottom: 1rem; /* Consistent spacing */
+}
+
+.trending-topics-card:hover {
+  transform: translateY(-2px); /* Slight lift on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Stronger shadow on hover */
+}
+
+/* Card Header */
+.trending-topics-card .card-header {
+  background-color: #ffffff; /* LinkedIn's header background color */
+  border-bottom: 1px solid #e0e0e0; /* LinkedIn's border color */
+  font-size: 1.1rem; /* LinkedIn's font size for headers */
+  font-weight: 600; /* Semi-bold for emphasis */
+  padding: 1rem; /* LinkedIn-like padding */
+  color: #000000; /* LinkedIn's primary text color */
+}
+
+/* Topic Item */
+.topic-item {
+  padding: 1rem; /* LinkedIn-like padding */
+  border-bottom: 1px solid #e0e0e0; /* LinkedIn's border color */
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.topic-item:hover {
+  background-color: #f5f5f5; /* Light gray background on hover */
+}
+
+.topic-item:last-child {
+  border-bottom: none; /* Remove border for the last item */
+}
+
+/* Hashtag */
+.hashtag {
+  color: #0a66c2; /* LinkedIn's primary blue */
+  font-weight: bold;
+  margin-right: 0.5rem; /* Spacing between hashtag and title */
+}
+
+/* Topic Title */
+.topic-title {
+  color: #000000; /* LinkedIn's primary text color */
+  font-weight: 500; /* Medium weight for emphasis */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .trending-topics-card {
+    margin-bottom: 0.75rem; /* Smaller margin on mobile */
+  }
+
+  .topic-item {
+    padding: 0.75rem; /* Smaller padding on mobile */
+  }
+
+  .hashtag {
+    font-size: 0.9rem; /* Smaller font size on mobile */
+  }
+
+  .topic-title {
+    font-size: 0.9rem; /* Smaller font size on mobile */
+  }
+}

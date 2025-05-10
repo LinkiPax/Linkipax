@@ -1,0 +1,127 @@
+/* Events Card Styling */
+.events-card {
+  border: none;
+  border-radius: 10px; /* LinkedIn uses slightly rounded corners */
+  background-color: #ffffff; /* LinkedIn's card background color */
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Subtle shadow like LinkedIn */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  margin-bottom: 1rem; /* Consistent spacing */
+}
+
+.events-card:hover {
+  transform: translateY(-2px); /* Slight lift on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Stronger shadow on hover */
+}
+
+/* Card Header */
+.events-card .card-header {
+  background-color: #ffffff; /* LinkedIn's header background color */
+  border-bottom: 1px solid #e0e0e0; /* LinkedIn's border color */
+  font-size: 1.1rem; /* LinkedIn's font size for headers */
+  font-weight: 600; /* Semi-bold for emphasis */
+  padding: 1rem; /* LinkedIn-like padding */
+  color: #000000; /* LinkedIn's primary text color */
+}
+
+/* Event Item Styling */
+.event-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem; /* LinkedIn-like padding */
+  border-bottom: 1px solid #e0e0e0; /* LinkedIn's border color */
+  transition: background-color 0.3s ease;
+}
+
+.event-item:hover {
+  background-color: #f5f5f5; /* Light gray background on hover */
+}
+
+.event-item:last-child {
+  border-bottom: none; /* Remove border for the last item */
+}
+
+.event-content {
+  flex: 1;
+}
+
+.event-content strong {
+  font-size: 1rem; /* LinkedIn's font size for titles */
+  color: #000000; /* LinkedIn's primary text color */
+}
+
+.event-content small {
+  font-size: 0.875rem; /* LinkedIn's font size for descriptions */
+  color: #666666; /* LinkedIn's secondary text color */
+}
+
+/* Button Styling */
+.btn-outline-primary {
+  border-color: #0a66c2; /* LinkedIn's primary blue */
+  color: #0a66c2; /* LinkedIn's primary blue */
+  border-radius: 25px; /* Rounded corners like LinkedIn */
+  padding: 0.5rem 1.5rem; /* LinkedIn-like button padding */
+  font-size: 0.875rem; /* LinkedIn's font size for buttons */
+  font-weight: 600; /* Semi-bold for emphasis */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+  background-color: #0a66c2; /* LinkedIn's primary blue */
+  color: #ffffff; /* White text on hover */
+}
+
+/* Loading Spinner */
+.events-card .spinner-border {
+  width: 2rem;
+  height: 2rem;
+  border-width: 0.2em;
+}
+
+/* Error Message */
+.alert-danger {
+  background-color: #f8d7da; /* Light red background */
+  border-color: #f5c6cb; /* Light red border */
+  color: #721c24; /* Dark red text */
+  border-radius: 8px; /* Rounded corners */
+}
+
+/* Custom Scrollbar for Event List */
+.events-card .list-group {
+  max-height: 400px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #0a66c2 rgba(255, 255, 255, 0.1);
+}
+
+.events-card .list-group::-webkit-scrollbar {
+  width: 8px;
+}
+
+.events-card .list-group::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+.events-card .list-group::-webkit-scrollbar-thumb {
+  background-color: #0a66c2; /* LinkedIn's primary blue */
+  border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .events-card {
+    margin-bottom: 0.75rem; /* Smaller margin on mobile */
+  }
+
+  .event-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .btn-outline-primary {
+    margin-top: 0.5rem;
+    width: 100%;
+  }
+}

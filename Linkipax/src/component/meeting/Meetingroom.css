@@ -1,0 +1,42 @@
+.form{
+    width:25rem;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    justify-self: start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+.chat-messages {
+    max-height: 300px;
+    overflow-y: auto;
+    background-color: #f8f9fa; /* Light background for contrast */
+    color: #000; /* Black text for readability */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  .chat-messages p {
+    margin: 5px 0;
+    padding: 5px;
+    background-color: #e9ecef; /* Light gray bubble background */
+    border-radius: 8px;
+  }
+  .chat-messages p strong {
+    color: #007bff; /* Highlight usernames in blue */
+  }
+  .chat-messages h7 {
+    color: #6c757d; /* Gray text for timestamps */
+  }
+ 

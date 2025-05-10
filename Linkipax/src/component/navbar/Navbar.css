@@ -1,0 +1,354 @@
+/* Navbar.css */
+
+/* Base Navbar Styles */
+.navbar {
+  padding: 0.5rem 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+/* Logo Styles with Two-Color Gradient */
+.navbar__logo h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 0;
+  background: linear-gradient(90deg, #0a66c2 0%, #00a0dc 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+}
+
+.dark-mode .navbar__logo h1 {
+  background: linear-gradient(90deg, #ffffff 0%, #00a0dc 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+
+
+.dark-mode .navbar__search .form-control:focus {
+  border-color: #00a0dc;
+}
+
+.dark-mode .navbar__search .btn-outline-primary:hover {
+  background-color: #00a0dc;
+}
+
+/* Dark Mode Styles */
+.dark-mode .navbar {
+  background-color: #1a1a1a !important;
+  color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode .navbar .navbar__search .form-control {
+  background-color: #2d2d2d;
+  color: #ffffff;
+  border-color: #444;
+}
+
+.dark-mode .navbar .navbar__search .btn-outline-primary {
+  color: #ffffff;
+  border-color: #444;
+}
+
+.dark-mode .navbar .nav-link,
+.dark-mode .navbar .navbar-brand {
+  color: #ffffff !important;
+}
+
+.dark-mode .navbar .nav-link:hover,
+.dark-mode .navbar .navbar-brand:hover {
+  color: #cccccc !important;
+}
+
+.dark-mode .navbar .dropdown-menu {
+  background-color: #2d2d2d;
+  border-color: #444;
+}
+
+.dark-mode .navbar .dropdown-item {
+  color: #ffffff;
+}
+
+.dark-mode .navbar .dropdown-item:hover {
+  background-color: #3d3d3d;
+  color: #ffffff;
+}
+
+/* Navigation Items */
+.navbar__pages {
+  display: flex;
+  align-items: center;
+}
+
+.navbar__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  color: #666;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  min-width: 80px;
+}
+
+.navbar__item:hover {
+  color: #0a66c2;
+}
+
+.navbar__icon {
+  font-size: 1.2rem;
+  margin-bottom: 0.2rem;
+}
+
+.navbar__item span {
+  font-size: 0.8rem;
+}
+
+/* Active Nav Item */
+.navbar__item.active {
+  color: #0a66c2;
+  font-weight: bold;
+}
+
+/* Dropdown Styles */
+.navbar .dropdown-toggle::after {
+  display: none;
+}
+
+.navbar .dropdown-menu {
+  margin-top: 0.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  height: max-content;
+}
+
+/* Mobile Styles */
+@media (max-width: 992px) {
+  .navbar__search {
+    margin: 1rem 0;
+    order: 3;
+    width: 100%;
+  }
+
+  .navbar__pages {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navbar__item {
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 0.75rem 1rem;
+  }
+
+  .navbar__icon {
+    margin-right: 1rem;
+    margin-bottom: 0;
+    font-size: 1rem;
+  }
+
+  .navbar__item span {
+    font-size: 1rem;
+  }
+
+  .navbar-collapse {
+    padding: 1rem 0;
+  }
+}
+
+/* Spinner Styles */
+.spinner-border {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-width: 0.15em;
+}
+
+/* Specific Item Colors */
+.navbar__item.Home:hover {
+  color: #0a66c2;
+}
+
+.navbar__item.MyNetwork:hover {
+  color: #0a66c2;
+}
+
+.navbar__item.Meeting:hover {
+  color: #0a66c2;
+}
+
+.navbar__item.Messaging:hover {
+  color: #0a66c2;
+}
+
+.navbar__item.Notification:hover {
+  color: #0a66c2;
+}
+
+.navbar__item.shorts:hover {
+  color: #0a66c2;
+}
+
+/* Dark mode toggle specific styles */
+.navbar__item .navbar__icon {
+  transition: transform 0.3s ease;
+}
+
+.navbar__item:hover .navbar__icon {
+  transform: scale(1.1);
+}
+
+/* Navbar toggle animation */
+.navbar-toggler {
+  border: none;
+  padding: 0.5rem;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.navbar-toggler-icon {
+  transition: all 0.3s ease;
+}
+
+/* Responsive adjustments for medium screens */
+@media (min-width: 992px) and (max-width: 1200px) {
+  .navbar__item {
+    padding: 0.5rem 0.5rem;
+    min-width: 70px;
+  }
+  
+  .navbar__item span {
+    font-size: 0.7rem;
+  }
+}
+/* Navbar.css - Search Bar Improvements */
+
+/* Search Bar Container */
+.navbar__search {
+  width: 100%;
+  max-width: 400px;
+  height: 50px;
+  position: relative;
+}
+
+/* Input Group Styling */
+.search-bar {
+  width: 100%;
+  border-radius: 50px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border: 1px solid #ddd;
+}
+
+.search-bar.focused {
+  border-color: #0a66c2;
+  box-shadow: 0 0 0 2px rgba(10, 102, 194, 0.2);
+}
+
+/* Search Icon */
+.search-icon {
+  background-color: transparent;
+  border: none;
+  color: #666;
+  padding: 1rem 1rem 1rem 1rem;
+  position: relative;
+  top: -8px;
+}
+
+/* Search Input */
+.search-input {
+  height: 50px;
+}
+
+.search-input:focus {
+  box-shadow: none;
+}
+
+/* Clear Search Button */
+.clear-search {
+  color: #666;
+  padding: 0.5rem 0.5rem;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.clear-search:hover {
+  color: #333;
+  opacity: 1;
+  text-decoration: none;
+}
+
+/* Search Button */
+.search-button {
+ 
+  
+  font-weight: 500;
+  white-space: nowrap;
+  transition: all 0.2s;
+}
+
+.search-button:disabled {
+  background-color: #e6e6e6;
+  border-color: #e6e6e6;
+  color: #999;
+}
+
+/* Dark Mode Search Bar */
+.dark-mode .search-bar {
+  background-color: #2d2d2d;
+  border-color: #444;
+}
+
+.dark-mode .search-icon {
+  color: #aaa;
+}
+
+.dark-mode .search-input {
+  background-color: #2d2d2d;
+  color: #fff;
+}
+
+.dark-mode .search-input::placeholder {
+  color: #aaa;
+}
+
+.dark-mode .clear-search {
+  color: #aaa;
+}
+
+.dark-mode .clear-search:hover {
+  color: #fff;
+}
+
+.dark-mode .search-button:disabled {
+  background-color: #3d3d3d;
+  border-color: #3d3d3d;
+  color: #777;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 992px) {
+  .search-bar {
+    border-radius: 8px;
+  }
+  
+  .search-button {
+    padding: 0.5rem 1rem;
+  }
+  
+  .search-icon {
+    padding-left: 1rem;
+  }
+}

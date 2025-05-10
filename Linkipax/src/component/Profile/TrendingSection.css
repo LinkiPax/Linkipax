@@ -1,0 +1,39 @@
+.trending-section {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.trending-category h3 {
+  color: #333;
+  font-weight: bold;
+}
+
+.trending-section-loading,
+.trending-section-error {
+  text-align: center;
+  padding: 20px;
+}
+
+.card {
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card-title a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.card-title a:hover {
+  text-decoration: underline;
+}
+
+.btn-outline-primary {
+  margin-top: 10px;
+}

@@ -1,0 +1,49 @@
+/* Custom styling for PersonalDetails page */
+.personal-details-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .personal-details-form .logo {
+    text-align: center;
+    font-size: 36px;
+    color: #007bff;
+  }
+  
+  .personal-details-form h2 {
+    color: #333;
+  }
+  
+  .personal-details-form p {
+    color: #6c757d;
+  }
+  
+  .personal-details-form .input-field {
+    margin-bottom: 15px;
+    padding: 12px;
+    font-size: 16px;
+  }
+  
+  .personal-details-form .submit-button {
+    padding: 12px;
+    font-size: 16px;
+    background-color: #007bff;
+    border-color: #007bff;
+    transition: background-color 0.3s ease;
+  }
+  
+  .personal-details-form .submit-button:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+  }
+  
+  .personal-details-form .error-message {
+    color: red;
+    text-align: center;
+    margin-top: 15px;
+  }
+  
